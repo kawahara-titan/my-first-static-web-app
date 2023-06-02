@@ -6,12 +6,11 @@
       {
           "route": "/login",
           "rewrite": "/.auth/login/aad",
-          // "allowedRoles": ["anonymous", "authenticated"]
-          "statusCode": 404
+          "allowedRoles": ["anonymous", "authenticated"]
       },
       {
           "route": "/.auth/login/github",
-          "statusCode": 404
+          "allowedRoles": ["anonymous", "authenticated"]
       },
       {
           "route": "/.auth/login/twitter",
