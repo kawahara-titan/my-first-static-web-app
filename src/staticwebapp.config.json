@@ -5,8 +5,9 @@
   "routes": [
       {
           "route": "/login",
-          "rewrite": "/.auth/login/aad",
-          "allowedRoles": ["anonymous", "authenticated"]
+          // "rewrite": "/.auth/login/aad",
+          // "allowedRoles": ["anonymous", "authenticated"]
+          "statusCode": 404
       },
       {
           "route": "/.auth/login/github",
